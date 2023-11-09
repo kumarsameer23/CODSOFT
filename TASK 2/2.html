@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sameer kumar Portfolio</title>
+   
+</head>
+<body>
+    <div class="loading-overlay">
+        <p>Loading...</p>
+    </div>
+
+    <header>
+        <img class="logo" src="pic 1.jpg" alt="My Logo">
+        <h1>Sameer Kumar</h1>
+        <p class="tagline">Web Developer and Editor</p>
+    </header>
+
+    <div class="navbar">
+        <a href="#about">About Me</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#projects">Projects</a>
+        <a href="#resume">Resume</a>
+    </div>
+
+    <div class="container">
+        <div class="section" id="about">
+            <h2>About Me</h2>
+            <p>Hi there! I'm Sameer kumar, a Web Developer based in Lucknnow. I am pursuing Btech from Babu Banarasi Das University and am passionate about development and editing. With 2 years of experience, I specialize in Frontend and have command over Editing softwares too. I'd love to work with you so let's connect and collaborate!
+            </p>
+           
+        </div>
+
+        <div class="section" id="skills">
+            <h2>Skills</h2>
+            <h4>Development Skills</h4>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>React & Angular</li>
+            </ul>
+            <h4>Editing Skills</h4>
+            <ul>
+                <li>Adobe Premier Pro</li>
+                <li>Adobe Aftereffects Effects</li>
+                <li>Adobe Illustrator</li>
+                <li>Adobe Lightroom</li>
+                <li>Adobe Photoshop</li>
+            </ul>
+        </div>
+
+        <div class="section" id="education">
+            <h2>Education</h2>
+            <p>I am currently pursuing B.Tech with Computer Science from Babu Banarasi Das University in Lucknnow. I am coding since 2 years and editing since past 4 years.</p>
+        </div>
+
+        <div class="section" id="projects">
+            <h2>Projects</h2>
+            <p>I have a Instagram Page for my Editing Projects</p>
+            <a href="https://www.instagram.com/_hakai.vegeta_/?igshid=ZDExYjZkNGI0OA%3D%3D">Instagram Page</a>
+            <p>
+                I have created a landing page for a commercial gym as a Development Project.
+            </p>
+            <a href="https://github.com/kumarsameer23/CODSOFT.git">GitHub Link</a>
+        </div>
+
+        <div class="section" id="resume">
+            <h2>Resume</h2>
+            <p>Download my Resume to learn more about my skills and experience:</p>
+            <a href="RESUME.pdf" download class="resume-button">Download Resume</a>
+            <a href="RESUME.pdf" target="_blank" class="resume-button">Preview Resume</a>
+        </div>
+    </div>
+
+    <div class="contact-bar">
+        <a href="mailto:sameerkumar10122004@gmail.com" class="contact-button">
+            <img class="contact-logo" src="Gmail-logo.png" alt="Gmail"></a>
+        <a href="https://instagram.com/vnm.pvt.007?igshid=MzNlNGNkZWQ4Mg==" class="contact-button">
+            <img class="contact-logo" src="INSTA.png" alt="Instagram"></a>
+        <a href="http://www.youtube.com/@SameerKumar-zd5rf" class="contact-button">
+            <img class="contact-logo" src="YT2.png" alt="YouTube"></a>
+        <a href="https://www.linkedin.com/in/sameer-kumar-14385a258?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="contact-button">
+            <img class="contact-logo" src="limked.png" alt="LinkedIn"></a>
+        <a href="https://github.com/kumarsameer23" class="contact-button">
+            <img class="contact-logo" src="git.png" alt="GitHub"></a>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2023 Sameer kumar</p>
+        <p>Contact : sameerkumar10122004@gmail.com</p>
+    </div>
+</body>
+<style>
+    .loading-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(241, 241, 241);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 999;
+        animation: loading 200ms ease-in-out 0s 1 normal forwards;
+    }
+
+    @keyframes loading {
+        0% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0;
+            visibility: hidden;
+        }
+    }
+
+    body {
+        font-family: 'Press Start 2P', cursive;
+        background-color: #000000; 
+        color: #efecec;
+        margin: 0;
+        padding: 0;
+        background-image: url(pic\ 2.jpg);
+    }
+
+    header {
+        background-color: rgb(214, 222, 222);
+        color: rgb(223, 221, 221);
+        text-align: center;
+        padding: 20px 0;
+        background-image: url("blurr pic.jpg");
+        background-size: 100%;
+    }
+
+    header .logo {
+        width: 100px;
+        height: 100px;
+        border: px solid #cbc6c6;
+        border-radius: 100%;
+    }
+
+    header h1 {
+        margin: 0;
+        font-size: 36px;
+        color: rgb(227, 227, 230);
+    }
+
+    .tagline {
+        font-style:normal;
+        font-size: 18px;
+        color: #dfdcdc;
+    }
+
+    .navbar {
+        background-color: rgb(57, 59, 59);
+        overflow: hidden;
+    }
+
+    .navbar a {
+        float: left;
+        display: block;
+        color: rgb(239, 238, 238);
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    .navbar a:hover {
+        background-color: rgb(97, 103, 102);
+        transform: scale(1.1);
+    }
+
+    .section {
+        
+        border-radius: 10px;
+        margin-bottom: 20px;
+        padding: 20px;
+        transition: transform 0.2s;
+    }
+
+    .section h2 {
+        color: #fcfcfc;
+        border-bottom: 2px solid #fff;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+        font-size: 24px;
+    }
+
+    .section p {
+        font-size: 16px;
+    }
+
+    .section:hover {
+        transform: scale(1.02);
+    }
+
+    .highlighted {
+        background-color: #c8afaf;
+    }
+
+    .resume-button {
+        display: inline-block;
+        background-color: rgb(28, 45, 73);
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        margin-right: 10px;
+        cursor: pointer;
+        font-size: 16px;
+        text-transform: uppercase;
+        transition: background-color 0.3s;
+    }
+
+    .resume-button:hover {
+        background-color: #0037ff;
+        transform: scale(1.05);
+    }
+
+    .footer {
+        text-align: center;
+        margin-top: 20px;
+        padding: 10px;
+        background-color: #252326;
+        color: #fff;
+    }
+
+    .contact-bar {
+        border-image-width: auto;
+    }
+
+    .contact-button {
+        background-color: rgb(66, 71, 71);
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        margin:10px;
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 18px;
+        text-transform: uppercase;
+        transition: background-color 0.3s;
+    }
+
+    .contact-button:hover {
+        background-color: rgb(67, 95, 215);
+        transform: scale(1.05);
+    }
+
+    .contact-logo {
+        width: 40px;
+        height: 30px;
+        margin-right: px;
+    }
+    .loading-spinner {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Define the spinner animation */
+        .spinner {
+            border: 6px solid #f3f3f3;
+            border-top: 6px solid #3498db;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 2s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+</style>
+</html>
