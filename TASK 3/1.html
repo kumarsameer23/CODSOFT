@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Basic Calculator</title>
+</head>
+<body>
+    <div id="calculator">
+        <h1>Basic Calculator</h1>
+        <input type="text" id="display" readonly>
+        <button onclick="clearDisplay()">C</button>
+        <button onclick="appendToDisplay('7')">7</button>
+        <button onclick="appendToDisplay('8')">8</button>
+        <button onclick="appendToDisplay('9')">9</button>
+        <button onclick="appendToDisplay('+')">+</button>
+        <button onclick="appendToDisplay('4')">4</button>
+        <button onclick="appendToDisplay('5')">5</button>
+        <button onclick="appendToDisplay('6')">6</button>
+        <button onclick="appendToDisplay('-')">-</button>
+        <button onclick="appendToDisplay('1')">1</button>
+        <button onclick="appendToDisplay('2')">2</button>
+        <button onclick="appendToDisplay('3')">3</button>
+        <button onclick="appendToDisplay('*')">*</button>
+        <button onclick="appendToDisplay('0')">0</button>
+        <button onclick="appendToDisplay('.')">.</button>
+        <button onclick="calculateResult()">=</button>
+        <button onclick="appendToDisplay('/')">/</button>
+    </div>
+
+    <script>
+        function appendToDisplay(value) {
+            document.getElementById("display").value += value;
+        }
+
+        function clearDisplay() {
+            document.getElementById("display").value = "";
+        }
+
+        function calculateResult() {
+            var displayValue = document.getElementById("display").value;
+            try {
+                var result = eval(displayValue);
+                document.getElementById("display").value = result;
+            } catch (error) {
+                document.getElementById("display").value = "Error";
+            }
+        }
+    </script>
+        <style>
+            #calculator {
+                width: 320px;
+                margin: 20px auto;
+                padding: 20px;
+                border: 2px solid #333;
+                border-radius: 10px;
+                background-color: #c6c0c0;
+            }
+            h1 {
+                text-align: center;
+            }
+            #display {
+                width: 90%;
+                padding: 10px;
+                margin: 5px 0;
+            }
+            button {
+                width: 70px;
+                height: 40px;
+                margin: 5px;
+            }
+        </style>
+</body>
+</html>
